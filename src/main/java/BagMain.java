@@ -22,10 +22,8 @@ class BagMain {
             if(double_enhance_handbags && bag instanceof HandBag){
                 HandBag handBag = (HandBag) bag;
                 handBag.enhance();
-            }
-            else if(double_enhance_handbags && bag instanceof CrossbodyBag){
-                CrossbodyBag crossbodyBag = (CrossbodyBag) bag;
-                crossbodyBag.enhance();
+            
+
             }
             
         }
