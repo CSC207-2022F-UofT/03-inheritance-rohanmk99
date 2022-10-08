@@ -43,6 +43,7 @@
     public void enhance(){
         super.capacity+=2;
     }
+    @Override
     public String toString(){
         return "Crossbody Bag with "+numberOfStraps+" straps";
     }
