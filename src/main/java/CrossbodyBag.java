@@ -45,6 +45,7 @@
     }
     @Override
     public String toString(){
-        return super.getColor()+" Bag with "+ getNumberOfStraps()+ "straps ("+super.getNumberOfContents() +" / "+ getCapacity()+")";
+        return super.getColor() + " Bag (" + super.getNumberOfContents() + " / " +
+        this.capacity + ")";
     }
  }
