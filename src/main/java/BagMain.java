@@ -20,10 +20,12 @@ class BagMain {
         for (Bag bag : bags) {
             bag.enhance();
             if(double_enhance_handbags && bag instanceof HandBag){
-                bag.enhance();
+                HandBag handBag = (HandBag) bag;
+                handBag.enhance();
             }
             else if(double_enhance_handbags && bag instanceof CrossbodyBag){
-                bag.enhance();
+                CrossbodyBag crossbodyBag = (CrossbodyBag) bag;
+                crossbodyBag.enhance();
             }
             
         }
@@ -50,5 +52,6 @@ class BagMain {
         }
         return count;
         // TODO: Implement this.
+
     }
 }
