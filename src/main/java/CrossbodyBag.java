@@ -45,6 +45,6 @@
     }
     @Override
     public String toString(){
-        return "Crossbody Bag with "+numberOfStraps+" straps";
+        return super.getColor()+" Bag with "+ getNumberOfStraps()+ "straps ("+super.getNumberOfContents() +" / "+ getCapacity()+")";
     }
  }
