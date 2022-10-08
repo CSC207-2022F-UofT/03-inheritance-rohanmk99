@@ -22,7 +22,7 @@ class BagMain {
             if(double_enhance_handbags && bag instanceof HandBag){
                 bag.enhance();
             }
-            else if(double_enhance_handbags && bag instanceof Crossbody){
+            else if(double_enhance_handbags && bag instanceof CrossbodyBag){
                 bag.enhance();
             }
             
@@ -43,8 +43,8 @@ class BagMain {
     public static int countCrossbodyStraps(Bag[] bags) {
         int count = 0;
         for (Bag bag : bags) {
-            if(bag instanceof Crossbody){
-                count+=((Crossbody) bag).getNumberOfStraps();
+            if(bag instanceof CrossbodyBag){
+                count+=((CrossbodyBag) bag).getNumberOfStraps();
             }
             
         }
